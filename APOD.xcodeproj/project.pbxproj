@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2152BE8729959703000701DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BE8629959703000701DF /* AppDelegate.swift */; };
+		2152BE8929959703000701DF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BE8829959703000701DF /* SceneDelegate.swift */; };
+		2152BE9129959703000701DF /* APOD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2152BE8F29959703000701DF /* APOD.xcdatamodeld */; };
+		2152BE9329959704000701DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2152BE9229959704000701DF /* Assets.xcassets */; };
+		2152BE9629959704000701DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2152BE9429959704000701DF /* LaunchScreen.storyboard */; };
+		2152BEA32995978A000701DF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BE9E2995978A000701DF /* Constants.swift */; };
+		2152BEA42995978A000701DF /* ParseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BE9F2995978A000701DF /* ParseJSON.swift */; };
+		2152BEA52995978A000701DF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEA02995978A000701DF /* NetworkService.swift */; };
+		2152BEA62995978A000701DF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEA12995978A000701DF /* Request.swift */; };
+		2152BEA72995978A000701DF /* INetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEA22995978A000701DF /* INetworkService.swift */; };
+		2152BED4299597C5000701DF /* IRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEA9299597C5000701DF /* IRouter.swift */; };
+		2152BED5299597C5000701DF /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEAA299597C5000701DF /* Router.swift */; };
+		2152BED6299597C5000701DF /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEAC299597C5000701DF /* StartView.swift */; };
+		2152BED7299597C5000701DF /* ApodApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEAE299597C5000701DF /* ApodApi.swift */; };
+		2152BED8299597C5000701DF /* Apod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEAF299597C5000701DF /* Apod.swift */; };
+		2152BED9299597C5000701DF /* ExtensionForStartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEB1299597C5000701DF /* ExtensionForStartView.swift */; };
+		2152BEDA299597C5000701DF /* ExtensionForVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEB2299597C5000701DF /* ExtensionForVC.swift */; };
+		2152BEDB299597C5000701DF /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEB3299597C5000701DF /* StartViewController.swift */; };
+		2152BEDC299597C5000701DF /* StartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEB4299597C5000701DF /* StartInteractor.swift */; };
+		2152BEDD299597C5000701DF /* StartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEB5299597C5000701DF /* StartPresenter.swift */; };
+		2152BEDE299597C5000701DF /* IStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEB7299597C5000701DF /* IStartViewController.swift */; };
+		2152BEDF299597C5000701DF /* IStartInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEB8299597C5000701DF /* IStartInteractor.swift */; };
+		2152BEE0299597C5000701DF /* IStartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEB9299597C5000701DF /* IStartPresenter.swift */; };
+		2152BEE1299597C5000701DF /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEBB299597C5000701DF /* DescriptionViewController.swift */; };
+		2152BEE2299597C5000701DF /* ExtensionForDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEBD299597C5000701DF /* ExtensionForDescriptionViewController.swift */; };
+		2152BEE4299597C5000701DF /* DescriptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEBF299597C5000701DF /* DescriptionPresenter.swift */; };
+		2152BEE5299597C5000701DF /* IDescriptionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEC1299597C5000701DF /* IDescriptionPresenter.swift */; };
+		2152BEE6299597C5000701DF /* IDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEC2299597C5000701DF /* IDescriptionViewController.swift */; };
+		2152BEE7299597C5000701DF /* IBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEC4299597C5000701DF /* IBuilder.swift */; };
+		2152BEE8299597C5000701DF /* Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEC5299597C5000701DF /* Builder.swift */; };
+		2152BEE9299597C5000701DF /* ApodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEC7299597C5000701DF /* ApodInteractor.swift */; };
+		2152BEEB299597C5000701DF /* ExtensionForApodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BECB299597C5000701DF /* ExtensionForApodView.swift */; };
+		2152BEEC299597C5000701DF /* ExtensionForApodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BECC299597C5000701DF /* ExtensionForApodVC.swift */; };
+		2152BEED299597C5000701DF /* ApodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BECD299597C5000701DF /* ApodViewController.swift */; };
+		2152BEEE299597C5000701DF /* ApodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BECE299597C5000701DF /* ApodView.swift */; };
+		2152BEEF299597C5000701DF /* ApodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BECF299597C5000701DF /* ApodPresenter.swift */; };
+		2152BEF0299597C5000701DF /* IApodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BED1299597C5000701DF /* IApodViewController.swift */; };
+		2152BEF1299597C5000701DF /* IApodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BED2299597C5000701DF /* IApodInteractor.swift */; };
+		2152BEF2299597C5000701DF /* IApodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BED3299597C5000701DF /* IApodPresenter.swift */; };
+		2152BEF429959CD4000701DF /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152BEF329959CD4000701DF /* DescriptionView.swift */; };
+		21D27EE22997AA4D0071F98C /* Date Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D27EE12997AA4D0071F98C /* Date Extension.swift */; };
+		21DE00E5299643AB0015A7ED /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00E4299643AB0015A7ED /* CoreDataStack.swift */; };
+		21DE00E8299644410015A7ED /* MyAPOD+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00E6299644410015A7ED /* MyAPOD+CoreDataClass.swift */; };
+		21DE00E9299644410015A7ED /* MyAPOD+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00E7299644410015A7ED /* MyAPOD+CoreDataProperties.swift */; };
+		21DE00EC299648EA0015A7ED /* ImageTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00EB299648EA0015A7ED /* ImageTransformer.swift */; };
+		21DE00EE299663010015A7ED /* MyApodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00ED299663010015A7ED /* MyApodsViewController.swift */; };
+		21DE00F1299663300015A7ED /* MyApodsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00F0299663300015A7ED /* MyApodsPresenter.swift */; };
+		21DE00F32996635D0015A7ED /* IMyApodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00F22996635D0015A7ED /* IMyApodsViewController.swift */; };
+		21DE00F5299663690015A7ED /* IMyApodsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00F4299663690015A7ED /* IMyApodsPresenter.swift */; };
+		21DE00F8299663AD0015A7ED /* ExtensionForMyApodsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00F7299663AD0015A7ED /* ExtensionForMyApodsVC.swift */; };
+		21DE00FB299664080015A7ED /* MyApodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00FA299664080015A7ED /* MyApodView.swift */; };
+		21DE00FD299699FE0015A7ED /* ProtocolForAllApods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21DE00FC299699FE0015A7ED /* ProtocolForAllApods.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2152BE8329959703000701DF /* APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2152BE8629959703000701DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2152BE8829959703000701DF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		2152BE9029959703000701DF /* APOD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = APOD.xcdatamodel; sourceTree = "<group>"; };
+		2152BE9229959704000701DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2152BE9529959704000701DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2152BE9729959704000701DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2152BE9E2995978A000701DF /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2152BE9F2995978A000701DF /* ParseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseJSON.swift; sourceTree = "<group>"; };
+		2152BEA02995978A000701DF /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		2152BEA12995978A000701DF /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		2152BEA22995978A000701DF /* INetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = INetworkService.swift; sourceTree = "<group>"; };
+		2152BEA9299597C5000701DF /* IRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IRouter.swift; sourceTree = "<group>"; };
+		2152BEAA299597C5000701DF /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		2152BEAC299597C5000701DF /* StartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		2152BEAE299597C5000701DF /* ApodApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodApi.swift; sourceTree = "<group>"; };
+		2152BEAF299597C5000701DF /* Apod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apod.swift; sourceTree = "<group>"; };
+		2152BEB1299597C5000701DF /* ExtensionForStartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionForStartView.swift; sourceTree = "<group>"; };
+		2152BEB2299597C5000701DF /* ExtensionForVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionForVC.swift; sourceTree = "<group>"; };
+		2152BEB3299597C5000701DF /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		2152BEB4299597C5000701DF /* StartInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartInteractor.swift; sourceTree = "<group>"; };
+		2152BEB5299597C5000701DF /* StartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPresenter.swift; sourceTree = "<group>"; };
+		2152BEB7299597C5000701DF /* IStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IStartViewController.swift; sourceTree = "<group>"; };
+		2152BEB8299597C5000701DF /* IStartInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IStartInteractor.swift; sourceTree = "<group>"; };
+		2152BEB9299597C5000701DF /* IStartPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IStartPresenter.swift; sourceTree = "<group>"; };
+		2152BEBB299597C5000701DF /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		2152BEBD299597C5000701DF /* ExtensionForDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionForDescriptionViewController.swift; sourceTree = "<group>"; };
+		2152BEBF299597C5000701DF /* DescriptionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionPresenter.swift; sourceTree = "<group>"; };
+		2152BEC1299597C5000701DF /* IDescriptionPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDescriptionPresenter.swift; sourceTree = "<group>"; };
+		2152BEC2299597C5000701DF /* IDescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IDescriptionViewController.swift; sourceTree = "<group>"; };
+		2152BEC4299597C5000701DF /* IBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBuilder.swift; sourceTree = "<group>"; };
+		2152BEC5299597C5000701DF /* Builder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Builder.swift; sourceTree = "<group>"; };
+		2152BEC7299597C5000701DF /* ApodInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodInteractor.swift; sourceTree = "<group>"; };
+		2152BECB299597C5000701DF /* ExtensionForApodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionForApodView.swift; sourceTree = "<group>"; };
+		2152BECC299597C5000701DF /* ExtensionForApodVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionForApodVC.swift; sourceTree = "<group>"; };
+		2152BECD299597C5000701DF /* ApodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodViewController.swift; sourceTree = "<group>"; };
+		2152BECE299597C5000701DF /* ApodView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodView.swift; sourceTree = "<group>"; };
+		2152BECF299597C5000701DF /* ApodPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApodPresenter.swift; sourceTree = "<group>"; };
+		2152BED1299597C5000701DF /* IApodViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IApodViewController.swift; sourceTree = "<group>"; };
+		2152BED2299597C5000701DF /* IApodInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IApodInteractor.swift; sourceTree = "<group>"; };
+		2152BED3299597C5000701DF /* IApodPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IApodPresenter.swift; sourceTree = "<group>"; };
+		2152BEF329959CD4000701DF /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
+		21D27EE12997AA4D0071F98C /* Date Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date Extension.swift"; sourceTree = "<group>"; };
+		21DE00E4299643AB0015A7ED /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		21DE00E6299644410015A7ED /* MyAPOD+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyAPOD+CoreDataClass.swift"; sourceTree = "<group>"; };
+		21DE00E7299644410015A7ED /* MyAPOD+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyAPOD+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		21DE00EB299648EA0015A7ED /* ImageTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTransformer.swift; sourceTree = "<group>"; };
+		21DE00ED299663010015A7ED /* MyApodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApodsViewController.swift; sourceTree = "<group>"; };
+		21DE00F0299663300015A7ED /* MyApodsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApodsPresenter.swift; sourceTree = "<group>"; };
+		21DE00F22996635D0015A7ED /* IMyApodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMyApodsViewController.swift; sourceTree = "<group>"; };
+		21DE00F4299663690015A7ED /* IMyApodsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMyApodsPresenter.swift; sourceTree = "<group>"; };
+		21DE00F7299663AD0015A7ED /* ExtensionForMyApodsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionForMyApodsVC.swift; sourceTree = "<group>"; };
+		21DE00FA299664080015A7ED /* MyApodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApodView.swift; sourceTree = "<group>"; };
+		21DE00FC299699FE0015A7ED /* ProtocolForAllApods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolForAllApods.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2152BE8029959703000701DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2152BE7A29959703000701DF = {
+			isa = PBXGroup;
+			children = (
+				2152BE8529959703000701DF /* APOD */,
+				2152BE8429959703000701DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2152BE8429959703000701DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2152BE8329959703000701DF /* APOD.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2152BE8529959703000701DF /* APOD */ = {
+			isa = PBXGroup;
+			children = (
+				2152BE8629959703000701DF /* AppDelegate.swift */,
+				2152BE8829959703000701DF /* SceneDelegate.swift */,
+				21DE00EA2996444D0015A7ED /* CoreDataFiles */,
+				2152BE9D2995978A000701DF /* Services */,
+				2152BEC3299597C5000701DF /* Builder */,
+				2152BEA8299597C5000701DF /* Router */,
+				2152BEAB299597C5000701DF /* StartModule */,
+				2152BEC6299597C5000701DF /* ApodModule */,
+				2152BEBA299597C5000701DF /* DescriptionModule */,
+				21DE00EF299663080015A7ED /* MyApodsModule */,
+				2152BE9429959704000701DF /* LaunchScreen.storyboard */,
+				2152BE9229959704000701DF /* Assets.xcassets */,
+				2152BE9729959704000701DF /* Info.plist */,
+				2152BE8F29959703000701DF /* APOD.xcdatamodeld */,
+			);
+			path = APOD;
+			sourceTree = "<group>";
+		};
+		2152BE9D2995978A000701DF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2152BE9E2995978A000701DF /* Constants.swift */,
+				21D27EE12997AA4D0071F98C /* Date Extension.swift */,
+				2152BE9F2995978A000701DF /* ParseJSON.swift */,
+				2152BEA02995978A000701DF /* NetworkService.swift */,
+				2152BEA12995978A000701DF /* Request.swift */,
+				2152BEA22995978A000701DF /* INetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2152BEA8299597C5000701DF /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2152BEA9299597C5000701DF /* IRouter.swift */,
+				2152BEAA299597C5000701DF /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2152BEAB299597C5000701DF /* StartModule */ = {
+			isa = PBXGroup;
+			children = (
+				2152BEB0299597C5000701DF /* Extensions */,
+				2152BEB6299597C5000701DF /* Protocols */,
+				2152BEAC299597C5000701DF /* StartView.swift */,
+				2152BEB3299597C5000701DF /* StartViewController.swift */,
+				2152BEB4299597C5000701DF /* StartInteractor.swift */,
+				2152BEB5299597C5000701DF /* StartPresenter.swift */,
+				2152BEAD299597C5000701DF /* Models */,
+			);
+			path = StartModule;
+			sourceTree = "<group>";
+		};
+		2152BEAD299597C5000701DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2152BEAE299597C5000701DF /* ApodApi.swift */,
+				2152BEAF299597C5000701DF /* Apod.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2152BEB0299597C5000701DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2152BEB1299597C5000701DF /* ExtensionForStartView.swift */,
+				2152BEB2299597C5000701DF /* ExtensionForVC.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2152BEB6299597C5000701DF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2152BEB7299597C5000701DF /* IStartViewController.swift */,
+				2152BEB8299597C5000701DF /* IStartInteractor.swift */,
+				2152BEB9299597C5000701DF /* IStartPresenter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2152BEBA299597C5000701DF /* DescriptionModule */ = {
+			isa = PBXGroup;
+			children = (
+				2152BEBC299597C5000701DF /* Extensions */,
+				2152BEC0299597C5000701DF /* Protocols */,
+				2152BEF329959CD4000701DF /* DescriptionView.swift */,
+				2152BEBB299597C5000701DF /* DescriptionViewController.swift */,
+				2152BEBF299597C5000701DF /* DescriptionPresenter.swift */,
+			);
+			path = DescriptionModule;
+			sourceTree = "<group>";
+		};
+		2152BEBC299597C5000701DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2152BEBD299597C5000701DF /* ExtensionForDescriptionViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2152BEC0299597C5000701DF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2152BEC1299597C5000701DF /* IDescriptionPresenter.swift */,
+				2152BEC2299597C5000701DF /* IDescriptionViewController.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2152BEC3299597C5000701DF /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				2152BEC4299597C5000701DF /* IBuilder.swift */,
+				2152BEC5299597C5000701DF /* Builder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		2152BEC6299597C5000701DF /* ApodModule */ = {
+			isa = PBXGroup;
+			children = (
+				2152BECA299597C5000701DF /* Extensions */,
+				2152BED0299597C5000701DF /* Protocols */,
+				2152BECE299597C5000701DF /* ApodView.swift */,
+				2152BECD299597C5000701DF /* ApodViewController.swift */,
+				2152BEC7299597C5000701DF /* ApodInteractor.swift */,
+				2152BECF299597C5000701DF /* ApodPresenter.swift */,
+			);
+			path = ApodModule;
+			sourceTree = "<group>";
+		};
+		2152BECA299597C5000701DF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2152BECB299597C5000701DF /* ExtensionForApodView.swift */,
+				2152BECC299597C5000701DF /* ExtensionForApodVC.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2152BED0299597C5000701DF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2152BED1299597C5000701DF /* IApodViewController.swift */,
+				21DE00FC299699FE0015A7ED /* ProtocolForAllApods.swift */,
+				2152BED2299597C5000701DF /* IApodInteractor.swift */,
+				2152BED3299597C5000701DF /* IApodPresenter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		21DE00EA2996444D0015A7ED /* CoreDataFiles */ = {
+			isa = PBXGroup;
+			children = (
+				21DE00E4299643AB0015A7ED /* CoreDataStack.swift */,
+				21DE00E6299644410015A7ED /* MyAPOD+CoreDataClass.swift */,
+				21DE00E7299644410015A7ED /* MyAPOD+CoreDataProperties.swift */,
+				21DE00EB299648EA0015A7ED /* ImageTransformer.swift */,
+			);
+			path = CoreDataFiles;
+			sourceTree = "<group>";
+		};
+		21DE00EF299663080015A7ED /* MyApodsModule */ = {
+			isa = PBXGroup;
+			children = (
+				21DE00F9299663C20015A7ED /* Extensions */,
+				21DE00F6299663730015A7ED /* Protocols */,
+				21DE00FA299664080015A7ED /* MyApodView.swift */,
+				21DE00ED299663010015A7ED /* MyApodsViewController.swift */,
+				21DE00F0299663300015A7ED /* MyApodsPresenter.swift */,
+			);
+			path = MyApodsModule;
+			sourceTree = "<group>";
+		};
+		21DE00F6299663730015A7ED /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				21DE00F22996635D0015A7ED /* IMyApodsViewController.swift */,
+				21DE00F4299663690015A7ED /* IMyApodsPresenter.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		21DE00F9299663C20015A7ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				21DE00F7299663AD0015A7ED /* ExtensionForMyApodsVC.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2152BE8229959703000701DF /* APOD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2152BE9A29959704000701DF /* Build configuration list for PBXNativeTarget "APOD" */;
+			buildPhases = (
+				2152BE7F29959703000701DF /* Sources */,
+				2152BE8029959703000701DF /* Frameworks */,
+				2152BE8129959703000701DF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APOD;
+			productName = APOD;
+			productReference = 2152BE8329959703000701DF /* APOD.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2152BE7B29959703000701DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					2152BE8229959703000701DF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = 2152BE7E29959703000701DF /* Build configuration list for PBXProject "APOD" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2152BE7A29959703000701DF;
+			productRefGroup = 2152BE8429959703000701DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2152BE8229959703000701DF /* APOD */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2152BE8129959703000701DF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2152BE9629959704000701DF /* LaunchScreen.storyboard in Resources */,
+				2152BE9329959704000701DF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2152BE7F29959703000701DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2152BEA32995978A000701DF /* Constants.swift in Sources */,
+				2152BEDB299597C5000701DF /* StartViewController.swift in Sources */,
+				21DE00F32996635D0015A7ED /* IMyApodsViewController.swift in Sources */,
+				2152BEE6299597C5000701DF /* IDescriptionViewController.swift in Sources */,
+				2152BED6299597C5000701DF /* StartView.swift in Sources */,
+				2152BEDF299597C5000701DF /* IStartInteractor.swift in Sources */,
+				2152BED7299597C5000701DF /* ApodApi.swift in Sources */,
+				21DE00E5299643AB0015A7ED /* CoreDataStack.swift in Sources */,
+				2152BEEF299597C5000701DF /* ApodPresenter.swift in Sources */,
+				2152BEE9299597C5000701DF /* ApodInteractor.swift in Sources */,
+				2152BEDA299597C5000701DF /* ExtensionForVC.swift in Sources */,
+				2152BEA62995978A000701DF /* Request.swift in Sources */,
+				2152BEE5299597C5000701DF /* IDescriptionPresenter.swift in Sources */,
+				2152BED5299597C5000701DF /* Router.swift in Sources */,
+				2152BE9129959703000701DF /* APOD.xcdatamodeld in Sources */,
+				2152BEEC299597C5000701DF /* ExtensionForApodVC.swift in Sources */,
+				21DE00FB299664080015A7ED /* MyApodView.swift in Sources */,
+				2152BED8299597C5000701DF /* Apod.swift in Sources */,
+				2152BEF1299597C5000701DF /* IApodInteractor.swift in Sources */,
+				21DE00F8299663AD0015A7ED /* ExtensionForMyApodsVC.swift in Sources */,
+				2152BED4299597C5000701DF /* IRouter.swift in Sources */,
+				2152BEE7299597C5000701DF /* IBuilder.swift in Sources */,
+				21DE00E9299644410015A7ED /* MyAPOD+CoreDataProperties.swift in Sources */,
+				21DE00E8299644410015A7ED /* MyAPOD+CoreDataClass.swift in Sources */,
+				2152BEE2299597C5000701DF /* ExtensionForDescriptionViewController.swift in Sources */,
+				2152BEE0299597C5000701DF /* IStartPresenter.swift in Sources */,
+				2152BE8729959703000701DF /* AppDelegate.swift in Sources */,
+				2152BED9299597C5000701DF /* ExtensionForStartView.swift in Sources */,
+				2152BE8929959703000701DF /* SceneDelegate.swift in Sources */,
+				21DE00F1299663300015A7ED /* MyApodsPresenter.swift in Sources */,
+				21D27EE22997AA4D0071F98C /* Date Extension.swift in Sources */,
+				21DE00F5299663690015A7ED /* IMyApodsPresenter.swift in Sources */,
+				2152BEA42995978A000701DF /* ParseJSON.swift in Sources */,
+				2152BEED299597C5000701DF /* ApodViewController.swift in Sources */,
+				2152BEF0299597C5000701DF /* IApodViewController.swift in Sources */,
+				2152BEDE299597C5000701DF /* IStartViewController.swift in Sources */,
+				2152BEEB299597C5000701DF /* ExtensionForApodView.swift in Sources */,
+				2152BEEE299597C5000701DF /* ApodView.swift in Sources */,
+				2152BEF2299597C5000701DF /* IApodPresenter.swift in Sources */,
+				2152BEA52995978A000701DF /* NetworkService.swift in Sources */,
+				21DE00FD299699FE0015A7ED /* ProtocolForAllApods.swift in Sources */,
+				2152BEE8299597C5000701DF /* Builder.swift in Sources */,
+				21DE00EE299663010015A7ED /* MyApodsViewController.swift in Sources */,
+				2152BEA72995978A000701DF /* INetworkService.swift in Sources */,
+				2152BEE4299597C5000701DF /* DescriptionPresenter.swift in Sources */,
+				21DE00EC299648EA0015A7ED /* ImageTransformer.swift in Sources */,
+				2152BEE1299597C5000701DF /* DescriptionViewController.swift in Sources */,
+				2152BEDC299597C5000701DF /* StartInteractor.swift in Sources */,
+				2152BEDD299597C5000701DF /* StartPresenter.swift in Sources */,
+				2152BEF429959CD4000701DF /* DescriptionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2152BE9429959704000701DF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2152BE9529959704000701DF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2152BE9829959704000701DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2152BE9929959704000701DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2152BE9B29959704000701DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KX8766VHZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = APOD/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlejandroRkhmv.APOD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2152BE9C29959704000701DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KX8766VHZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = APOD/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlejandroRkhmv.APOD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2152BE7E29959703000701DF /* Build configuration list for PBXProject "APOD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2152BE9829959704000701DF /* Debug */,
+				2152BE9929959704000701DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2152BE9A29959704000701DF /* Build configuration list for PBXNativeTarget "APOD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2152BE9B29959704000701DF /* Debug */,
+				2152BE9C29959704000701DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		2152BE8F29959703000701DF /* APOD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2152BE9029959703000701DF /* APOD.xcdatamodel */,
+			);
+			currentVersion = 2152BE9029959703000701DF /* APOD.xcdatamodel */;
+			path = APOD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 2152BE7B29959703000701DF /* Project object */;
+}
