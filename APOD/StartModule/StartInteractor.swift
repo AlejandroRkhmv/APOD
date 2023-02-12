@@ -13,7 +13,6 @@ class StartInteractor: IStartInteractor {
     var networkService: INetworkService?
     var constants: Constants! = Constants()
     let parseJson = ParseJSON()
-    let cache = NSCache<NSString, UIImage>()
     
     init(networkService: INetworkService?) {
         self.networkService = networkService

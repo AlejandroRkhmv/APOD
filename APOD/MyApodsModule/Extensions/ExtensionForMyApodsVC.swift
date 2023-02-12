@@ -64,7 +64,7 @@ extension MyApodsViewController {
                                                            managedObjectContext: myApodPresenter.context,
                                                            sectionNameKeyPath: nil,
                                                            cacheName: nil)
-        fetchResultController.delegate = self
+        //fetchResultController.delegate = self
         do {
             try fetchResultController.performFetch()
         } catch let error as NSError {

@@ -36,30 +36,49 @@ class ApodPresenter: IApodPresenter {
     }
     
     internal func needApodImage(_ apod: Apod) {
-        if apod.mediaType == "image" {
-            self.apodViewController?.apodView?.activityIndicator.startAnimating()
-            guard let urlString = apod.hdurl else { return }
-            apodInteractor?.getDataImage(urlString: urlString, completionHandler: { [weak self] data in
-                guard let self = self else { return }
-                guard let title = apod.title else { return }
-                DispatchQueue.main.async {
-                    self.apodViewController?.setUI(from: data, text: title)
-                }
-                guard let apod = self.apod else { return }
-                self.saveAPODinCoreData(object: apod as! Apod, data: data)
-            })
+        
+        if let image = apodInteractor?.cache.object(forKey: apod.date as AnyObject) {
+            guard let data = image.pngData(), let title = apod.title else { return }
+            DispatchQueue.main.async {
+                self.apodViewController?.setUI(from: data, text: title)
+            }
         } else {
-            print("video")
-            guard let urlForVideo = apodInteractor?.constant.videoImage else { return }
-            apodInteractor?.getDataImage(urlString: urlForVideo, completionHandler: { [weak self] data in
-                guard let self = self else { return }
-                guard let title = apod.title else { return }
-                DispatchQueue.main.async {
-                    self.apodViewController?.setUI(from: data, text: title)
-                }
-                guard let apod = self.apod else { return }
-                self.saveAPODinCoreData(object: apod as! Apod, data: data)
-            })
+            if apod.mediaType == "image" {
+                self.apodViewController?.apodView?.activityIndicator.startAnimating()
+                guard let urlString = apod.hdurl else { return }
+                apodInteractor?.getDataImage(urlString: urlString, completionHandler: { [weak self] data in
+                    guard let self = self else { return }
+                    guard let title = apod.title else { return }
+                    DispatchQueue.main.async {
+                        self.apodViewController?.setUI(from: data, text: title)
+                    }
+                    guard let newApod = self.apod as? Apod else { return }
+                    let fetchRequest: NSFetchRequest<MyAPOD> = MyAPOD.fetchRequest()
+                    if let apods = try? self.context.fetch(fetchRequest) {
+                        for apod in apods {
+                            if apod.date == newApod.date {
+                                return
+                            }
+                        }
+                    }
+                    self.saveAPODinCoreData(object: newApod, data: data)
+                    if let image = UIImage(data: data), let date = newApod.date {
+                        self.apodInteractor?.saveToCache(image: image, date: date)
+                    }
+                })
+            } else {
+                print("video")
+                guard let urlForVideo = apodInteractor?.constant.videoImage else { return }
+                apodInteractor?.getDataImage(urlString: urlForVideo, completionHandler: { [weak self] data in
+                    guard let self = self else { return }
+                    guard let title = apod.title else { return }
+                    DispatchQueue.main.async {
+                        self.apodViewController?.setUI(from: data, text: title)
+                    }
+                    guard let newApod = self.apod else { return }
+                    self.saveAPODinCoreData(object: newApod as! Apod, data: data)
+                })
+            }
         }
     }
     
